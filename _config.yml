@@ -1,0 +1,42 @@
+title: LTEC 5220
+description: >
+  Multimedia in Technology Applications
+permalink: /:year/:month/:day/:title/
+baseurl: ""
+url: "https://LTEC5220.ray.pillers.us"
+site-twitter: #if your site has a twitter account, enter it here
+remote_theme: "mmistakes/minimal-mistakes@4.14.1"
+
+# Author Settings
+author: Raymond Piller
+author-img: //static.vertigion.com/images/Avatar-Negative.png
+about-author: BS BCIS<br />I've been an I.T. Administrator for 18 years; I started out in the Army. Working on my MS and then PhD in <a href="http://lt.unt.edu" target="_blank">LTEC</a>.
+social-twitter: VertigoRay
+social-facebook: VertigoRay
+social-github: VertigoRay
+social-linkedin: VertigoRay
+social-blog: 'http://blog.vertigion.com'
+social-email: RaymondPiller@my.unt.edu
+
+# Disqus
+discus-identifier: vertigoray
+
+# Tracker
+analytics: UA-20345769-1
+
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-gist
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji
+
+paginate: 8
+paginate_path: "/page/:num"
+
+# gist:
+#   noscript: false
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
