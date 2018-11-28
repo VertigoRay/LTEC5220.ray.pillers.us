@@ -6,6 +6,7 @@ baseurl: ""
 url: "https://LTEC5220.ray.pillers.us"
 site-twitter: #if your site has a twitter account, enter it here
 remote_theme: "mmistakes/minimal-mistakes@4.14.1"
+minimal_mistakes_skin: "dark"
 
 # Author Settings
 author: Raymond Piller
@@ -17,6 +18,26 @@ social-github: VertigoRay
 social-linkedin: VertigoRay
 social-blog: 'http://blog.vertigion.com'
 social-email: RaymondPiller@my.unt.edu
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
 
 # Disqus
 discus-identifier: vertigoray
@@ -39,4 +60,12 @@ paginate_path: "/page/:num"
 # gist:
 #   noscript: false
 
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+include:
+  - _pages
+
+exclude:
+  - gulpfile.js
+  - node_modules
+  - package.json
+  - README.md
+  - yarn.lock
