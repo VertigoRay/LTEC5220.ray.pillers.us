@@ -1,0 +1,44 @@
+---
+layout: post
+title: Training Session - Introduction
+img: //i.imgur.com/cfAoUTw.jpg
+author: Raymond Piller
+comments: true
+tags:
+- Cross-Training
+---
+<img src="//i.imgur.com/WphmK3K.png" alt="" style="clear:right; float:right;" />
+<img src="//i.imgur.com/B501WS3.png" alt="" style="clear:right; float:right;" />
+The virtual lab should be ready to work with shortly.
+When it’s done, you should have four VMs running in VirtualBox, they will look something like the ones shown in the picture at right.
+Once they are all running, we can get started with the rest of the lab.
+
+The VMs should automatically bind to the `UNTDV` domain.
+You will need an account on that domain to login to the *Windows 10* VM.
+You should never login to the *Windows Server 2016* VM.
+You will be managing it from the Window 10 VM using Remote Server Administration Tools (RSAT).
+
+Every good organization needs to have standards and conventions.
+Here’s some information you will need to adhere to the standards and conventions:
+- **IT Support Name (Abbr)**: `Computing for Arts + Sciences (CAS)`
+- **Domain User Names**: `euid9123`
+  - The username will be set to the university assigned Employee Unique ID (EUID). For purposes of this training, all EUIDs have a leading digit of 9 (`euid9123`).
+  - **AD User Required Properties**:
+    - *SamAccountname*: set to the university assigned EUID.
+    - *EmployeeID*: set to the university assigned EUID.
+    - *EmployeeNumber*: set to the university assigned Employee Number. For purposes of this training, all EMPLIDs have two leading digits of 99 (`99345678`).
+    - *Mail (aka E-mail)*: must be `firstname.lastname@unt.edu` where firstname can be a non-vanity nickname. For the purposes of this training, the domain for all generated accounts will be `@donotreply.unt.edu` (or `@mytestunt.onmicrosoft.com`; TBD).
+    - *UserPrincipalName (UPN)*: must be set the same as the *Mail* attribute.
+- **Domain Group Names**: `DEPT-FunctionalDescription`
+  - `DEPT-`: official departmental abbreviation; ALL CAPS.
+  - `FunctionalDescription`: a functional description of what the group is for, written in PascalCase, keep abbreviations to a minimum.
+- **Domain Computer Names**: `CAS-123456`
+  - `CAS`-: IT support abbreviation followed by a hyphen.
+  - `123456`: Computer’s serial number
+  - The computer name cannot exceed 15 characters; see Appendix A.
+
+For purposes of this training, assume that all emails came digitally signed from the person in the signature block.
+This means that there is no need to worry about spoofed emails; the signature block always matched the from-address and digital signature of the email.
+
+The learner will be considered to have *mastery* over the topic (or task set) if two of the tasks are completed using PowerShell; this does not include any preparation step.
+If the Learner has mastery over the task set, they can proceed to the next task set immediately.

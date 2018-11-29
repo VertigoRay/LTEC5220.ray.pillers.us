@@ -1,23 +1,10 @@
 title: LTEC 5220
 description: >
   Multimedia in Technology Applications
-permalink: /:year/:month/:day/:title/
+permalink: /training/:title/
 baseurl: ""
 url: "https://LTEC5220.ray.pillers.us"
 site-twitter: #if your site has a twitter account, enter it here
-remote_theme: "mmistakes/minimal-mistakes@4.14.1"
-minimal_mistakes_skin: "dark"
-
-# Author Settings
-author: Raymond Piller
-author-img: //static.vertigion.com/images/Avatar-Negative.png
-about-author: BS BCIS<br />I've been an I.T. Administrator for 18 years; I started out in the Army. Working on my MS and then PhD in <a href="http://lt.unt.edu" target="_blank">LTEC</a>.
-social-twitter: VertigoRay
-social-facebook: VertigoRay
-social-github: VertigoRay
-social-linkedin: VertigoRay
-social-blog: 'http://blog.vertigion.com'
-social-email: RaymondPiller@my.unt.edu
 
 defaults:
   # _pages
@@ -39,6 +26,29 @@ defaults:
       share: true
       related: true
 
+# Author Settings
+author: Raymond Piller
+author-img: //static.vertigion.com/images/Avatar-Negative.png
+about-author: >
+  <b>LTEC 5220</b><br />
+  <i>Windows Server Administration</i><br />
+  <i>Cross-Training Job Aid</i>
+  
+  <ul class="menu">
+    <li><a href="/training/intro">🔹 Start Training!</a></li>
+  </ul>
+  <hr />
+  <ul class="menu">
+    <li><a href="/about">🔸 About</a></li>
+    <li><a href="/contact">🔸 Contact Us</a></li>
+  </ul>
+social-twitter: VertigoRay
+social-facebook: VertigoRay
+social-github: VertigoRay
+social-linkedin: VertigoRay
+social-blog: 'http://blog.vertigion.com'
+social-email: Raymond.Piller@my.unt.edu
+
 # Disqus
 discus-identifier: vertigoray
 
@@ -48,24 +58,15 @@ analytics: UA-20345769-1
 # Build Settings
 markdown: kramdown
 plugins:
-  - jekyll-gist
-  - jekyll-include-cache
-  - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-paginate
   - jemoji
+  - jekyll-gist
 
-paginate: 8
+paginate: 20
 paginate_path: "/page/:num"
 
 # gist:
 #   noscript: false
 
-include:
-  - _pages
-
-exclude:
-  - gulpfile.js
-  - node_modules
-  - package.json
-  - README.md
-  - yarn.lock
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]

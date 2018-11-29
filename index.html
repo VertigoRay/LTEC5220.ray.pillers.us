@@ -1,0 +1,47 @@
+---
+layout: main
+css:
+- /assets/css/demo.css
+- /assets/css/style3.css
+---
+<div class="container">
+  <div class="sp-container">
+    <div class="sp-content">
+      <div class="sp-wrap sp-left">
+        <h2>
+          <span class="sp-top">Windows Administrator</span>
+          <span class="sp-mid">Server</span>
+          <span class="sp-bottom">Cross-Training</span>
+        </h2>
+      </div>
+      <div class="sp-wrap sp-right">
+        <h2>
+          <span class="sp-top">Ready to be a top-notch IT</span>
+          <span class="sp-mid">Admin<i>!</i><i>?</i></span>
+          <span class="sp-bottom">Yeah, you are!</span>
+        </h2>
+      </div>
+    </div>
+    <div class="sp-full">
+      <h2>Windows Cross-Training</h2>
+      <a href="/training/intro/">Start Here!</a>
+    </div>
+  </div>
+</div>
+
+{% for post in paginator.posts %}
+<article class="post">
+  {% if post.img %}
+    <a class="post-thumbnail" style="background-image: url({{ post.img }})" href="{{post.url | prepend: site.baseurl}}"></a>
+  {% else %}
+  {% endif %}
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+    <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
+    <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
+  </div>
+</article>
+{% endfor %}
+
+{% include pagination.html %}
