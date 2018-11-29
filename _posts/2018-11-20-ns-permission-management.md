@@ -160,7 +160,7 @@ Do all of the things that were stated:
   - <code>CASlab-NTWL-Faculty</code>
   - <code>CASlab-NTWL-Staff</code>
   - <code>CASlab-S-NTWL-FacStaff</code>
-- Additionally, discovery should show that all departments have a student employees AD group. So, the learner should also create the following AD group:
+- Additionally, discovery should show that all departments have a student employees AD group. So, you should also create the following AD group:
   - <code>CASlab-NTWL-StudentEmployees</code>
 
 This can be evaluated automatically with this PowerShell script:

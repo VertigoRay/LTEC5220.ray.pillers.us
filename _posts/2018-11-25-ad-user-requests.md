@@ -26,10 +26,11 @@ First, confirm you can login using your EUID and the temporary password that you
 Then, ensure that you’ve been added to the `UNTDV\CAS-OU-Admins` AD group.
 If you’re not, ask the WSM to add you, and you will need to logoff and login again.
 
-To proceed through this section, the learner will need to install RSAT into the *Win10* VM.
-The learner should know that, but they may need to be reminded that we don’t work directly on a domain controller (DC).
+To proceed through this section, you will need to install RSAT into the *Win10* VM.
+You should know that, but they may need to be reminded that we don’t work directly on a domain controller (DC).
 
-Each task in this set should be completed in order until the learner has mastery over the topic. Each task is the results of [a form on our website](https://itservices.cas.unt.edu/services/accounts-servers/request/get-account) is submitted; however, **these requests are fictitious and should only be created within the Virtual Lab**.
+Each task in this set should be completed in order until you have mastery over the topic.
+Each task is the results of [a form on our website](https://itservices.cas.unt.edu/services/accounts-servers/request/get-account) is submitted; however, **these requests are fictitious and should only be created within the Virtual Lab**.
 Additional information can be requested of the customer by whatever means is deemed appropriate by the instructor; I suggest they CC you on all correspondence.
 For one reason or another, these requests failed the automated process’s pre-execution test.
 You will have to do them all manually, resolving any issues that arise.
